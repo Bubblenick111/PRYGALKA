@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cpsm10knt8w7f"]
+
+[ext_resource type="Script" path="res://ParallaxBackground1111.gd" id="1_51405"]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+script = ExtResource("1_51405")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="."]

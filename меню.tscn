@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5lojnto41as6"]
+
+[ext_resource type="Script" path="res://МЕНЮ.gd" id="1_26sa1"]
+
+[node name="МЕНЮ" type="Node2D"]
+script = ExtResource("1_26sa1")
+
+[node name="ИГРАТЬ" type="Button" parent="."]
+offset_left = 29.0
+offset_top = 26.0
+offset_right = 147.0
+offset_bottom = 94.0
+text = "ИГРАТЬ"
+
+[node name="ВЫХОД" type="Button" parent="."]
+offset_left = 30.0
+offset_top = 118.0
+offset_right = 147.0
+offset_bottom = 186.0
+text = "ВЫХОД"
+
+[connection signal="button_up" from="ИГРАТЬ" to="." method="_on_играть_pressed"]
+[connection signal="pressed" from="ВЫХОД" to="." method="_on_button_2_pressed"]
